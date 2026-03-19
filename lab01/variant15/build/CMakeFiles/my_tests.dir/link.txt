@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/my_tests.dir/link.d CMakeFiles/my_tests.dir/tests/test_shopping_list.cpp.o CMakeFiles/my_tests.dir/lib/shopping_list.cpp.o -o my_tests  vcpkg_installed/x64-linux/debug/lib/manual-link/libgtest_main.a vcpkg_installed/x64-linux/debug/lib/libgtest.a

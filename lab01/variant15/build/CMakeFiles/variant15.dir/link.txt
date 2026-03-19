@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/variant15.dir/link.d CMakeFiles/variant15.dir/app/main.cpp.o CMakeFiles/variant15.dir/lib/shopping_list.cpp.o -o variant15  vcpkg_installed/x64-linux/debug/lib/libfmtd.a

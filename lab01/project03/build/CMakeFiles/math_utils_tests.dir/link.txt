@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/math_utils_tests.dir/link.d CMakeFiles/math_utils_tests.dir/test/test_math_utils.cpp.o -o math_utils_tests  libmath_utils.a lib/libgtest_main.a lib/libgtest.a

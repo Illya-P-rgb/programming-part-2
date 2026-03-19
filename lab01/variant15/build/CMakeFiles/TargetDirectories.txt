@@ -1,0 +1,4 @@
+/home/ilya/programming-part-2/variant15/build/CMakeFiles/variant15.dir
+/home/ilya/programming-part-2/variant15/build/CMakeFiles/my_tests.dir
+/home/ilya/programming-part-2/variant15/build/CMakeFiles/edit_cache.dir
+/home/ilya/programming-part-2/variant15/build/CMakeFiles/rebuild_cache.dir

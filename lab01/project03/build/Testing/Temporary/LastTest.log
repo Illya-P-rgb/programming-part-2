@@ -1,0 +1,57 @@
+Start testing: Mar 19 17:37 UTC
+----------------------------------------------------------
+1/2 Testing: MathUtilsTest.AddWorks
+1/2 Test: MathUtilsTest.AddWorks
+Command: "/home/ilya/programming-part-2/project03/build/math_utils_tests" "--gtest_filter=MathUtilsTest.AddWorks" "--gtest_also_run_disabled_tests"
+Directory: /home/ilya/programming-part-2/project03/build
+"MathUtilsTest.AddWorks" start time: Mar 19 17:37 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/ilya/programming-part-2/project03/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MathUtilsTest.AddWorks
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MathUtilsTest
+[ RUN      ] MathUtilsTest.AddWorks
+[       OK ] MathUtilsTest.AddWorks (0 ms)
+[----------] 1 test from MathUtilsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MathUtilsTest.AddWorks" end time: Mar 19 17:37 UTC
+"MathUtilsTest.AddWorks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: MathUtilsTest.SubWorks
+2/2 Test: MathUtilsTest.SubWorks
+Command: "/home/ilya/programming-part-2/project03/build/math_utils_tests" "--gtest_filter=MathUtilsTest.SubWorks" "--gtest_also_run_disabled_tests"
+Directory: /home/ilya/programming-part-2/project03/build
+"MathUtilsTest.SubWorks" start time: Mar 19 17:37 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/ilya/programming-part-2/project03/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MathUtilsTest.SubWorks
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MathUtilsTest
+[ RUN      ] MathUtilsTest.SubWorks
+[       OK ] MathUtilsTest.SubWorks (0 ms)
+[----------] 1 test from MathUtilsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MathUtilsTest.SubWorks" end time: Mar 19 17:37 UTC
+"MathUtilsTest.SubWorks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 19 17:37 UTC
