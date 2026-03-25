@@ -294,6 +294,3 @@ The delivery status can be changed using the markDelivered() method.
 Priority changes can be handled through the increasePriority() method instead of a setter in some cases or deleted entirely. I would say that change of prirority is an unnecessary feature art all.
 ```
 
-
-
-## Conclusions:
