@@ -1,0 +1,34 @@
+@startuml
+
+class DeliveryOrder {
+    - orderNumber : int
+    - distanceKm : double
+    - price : double
+    - delivered : bool
+    - priority : int
+
+    + DeliveryOrder(orderNumber : int, distanceKm : double, price : double, delivered : bool, priority : int)
+
+    + getOrderNumber() const : int
+    + setOrderNumber(value : int) : void
+
+    + getDistanceKm() const : double
+    + setDistanceKm(value : double) : void
+
+    + getPrice() const : double
+    + setPrice(value : double) : void
+
+    + getDelivered() const : bool
+    + setDelivered(value : bool) : void
+
+    + getPriority() const : int
+    + setPriority(value : int) : void
+
+    + markDelivered() : void
+    + deliveryCostPerKm() const : double
+    + isUrgent() const : bool
+    + increasePriority() : void
+    + discountedPrice(percent : double) const : double
+}
+
+@enduml
