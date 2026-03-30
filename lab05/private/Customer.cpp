@@ -1,20 +1,11 @@
 #include "Customer.hpp"
 
-Customer::Customer() : id(0), name(""), email("") {}
+Customer::Customer() : id(0) {}
 
-Customer::Customer(int id, const std::string& name, const std::string& email)
-    : id(id), name(name), email(email) {}
+Customer::Customer(int id) : id(id) {}
 
 int Customer::getId() const {
     return id;
-}
-
-std::string Customer::getName() const {
-    return name;
-}
-
-std::string Customer::getEmail() const {
-    return email;
 }
 
 void Customer::addOrder(const Order& order) {

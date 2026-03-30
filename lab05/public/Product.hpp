@@ -8,19 +8,13 @@ private:
     int id;
     std::string name;
     double price;
-    int stock;
 
 public:
     Product();
-    Product(int id, const std::string& name, double price, int stock);
+    Product(int id, const std::string& name, double price);
 
     int getId() const;
-    std::string getName() const;
     double getPrice() const;
-    int getStock() const;
-
-    void setPrice(double newPrice);
-    void updateStock(int amount);
 };
 
 #endif

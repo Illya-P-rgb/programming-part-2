@@ -7,17 +7,12 @@ class SupportAgent {
 private:
     int id;
     std::string name;
-    std::string department;
 
 public:
     SupportAgent();
-    SupportAgent(int id, const std::string& name, const std::string& department);
+    SupportAgent(int id, const std::string& name);
 
     int getId() const;
-    std::string getName() const;
-    std::string getDepartment() const;
-
-    void setDepartment(const std::string& dept);
 };
 
 #endif

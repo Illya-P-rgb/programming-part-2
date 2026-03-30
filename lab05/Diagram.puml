@@ -1,0 +1,59 @@
+@startuml store_system
+
+' Define classes
+class Product {
+    - int id
+    - std::string name
+    - double price
+    + Product(int, std::string, double)
+    + getId(): int
+    + getName(): std::string
+    + getPrice(): double
+}
+
+class Customer {
+    - int id
+    - std::vector<Order> orders
+    + Customer(int)
+    + getId(): int
+    + addOrder(Order)
+    + getOrders(): std::vector<Order>
+}
+
+class Order {
+    - int id
+    - std::vector<Product> products
+    + Order(int)
+    + getId(): int
+    + addProduct(Product)
+    + getProducts(): std::vector<Product>
+}
+
+class SupportAgent {
+    - int id
+    - std::string name
+    + SupportAgent(int, std::string)
+    + getId(): int
+    + getName(): std::string
+}
+
+class Store {
+    - std::vector<Product> products
+    - std::vector<Customer> customers
+    - std::vector<SupportAgent> agents
+    + Store()
+    + addProduct(Product)
+    + addCustomer(Customer)
+    + addSupportAgent(SupportAgent)
+    + findProduct(int): Product*
+    + findCustomer(int): Customer*
+}
+
+' Define relationships (aggregation)
+Store "1" o-- "*" Product : aggregates
+Store "1" o-- "*" Customer : aggregates
+Store "1" o-- "*" SupportAgent : aggregates
+Customer "1" o-- "*" Order : aggregates
+Order "1" o-- "*" Product : aggregates
+
+@enduml
