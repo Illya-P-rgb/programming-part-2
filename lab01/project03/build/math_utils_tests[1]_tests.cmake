@@ -1,5 +1,0 @@
-add_test([=[MathUtilsTest.AddWorks]=]  /home/ilya/programming-part-2/project03/build/math_utils_tests [==[--gtest_filter=MathUtilsTest.AddWorks]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[MathUtilsTest.AddWorks]=]  PROPERTIES WORKING_DIRECTORY /home/ilya/programming-part-2/project03/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[MathUtilsTest.SubWorks]=]  /home/ilya/programming-part-2/project03/build/math_utils_tests [==[--gtest_filter=MathUtilsTest.SubWorks]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[MathUtilsTest.SubWorks]=]  PROPERTIES WORKING_DIRECTORY /home/ilya/programming-part-2/project03/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  math_utils_tests_TESTS MathUtilsTest.AddWorks MathUtilsTest.SubWorks)
