@@ -1,15 +1,15 @@
 #include "Table.hpp"
 
-Table::Table() : rows(0), cols(0) {}
+Table::Table() : rows_(0), cols_(0) {}
 
-Table::Table(int rows, int cols) : rows(rows), cols(cols) {}
+Table::Table(int rows, int cols) : rows_(rows), cols_(cols) {}
 
 int Table::getRows() const {
-    return rows;
+    return rows_;
 }
 
 int Table::getCols() const {
-    return cols;
+    return cols_;
 }
 
 int Table::getCellCount() const {
