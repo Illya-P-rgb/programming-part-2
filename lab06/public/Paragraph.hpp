@@ -5,7 +5,7 @@
 
 class Paragraph {
 private:
-    std::string text;
+    std::string text_;
 
 public:
     Paragraph();
@@ -13,6 +13,7 @@ public:
 
     std::string getText() const;
     void setText(const std::string &text);
+    int getLength() const;
 };
 
 #endif

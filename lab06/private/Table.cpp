@@ -11,3 +11,7 @@ int Table::getRows() const {
 int Table::getCols() const {
     return cols;
 }
+
+int Table::getCellCount() const {
+    return rows_ * cols_;
+}

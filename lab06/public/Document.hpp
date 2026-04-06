@@ -6,17 +6,22 @@
 #include "Table.hpp"
 #include "Image.hpp"
 
+
 class Document {
 private:
-    Header header;
+    Header header_;
 
-    Paragraph paragraphs[5];
-    Table tables[3];
-    Image images[5];
+    Paragraph paragraphs_[5];
+    Table tables_[3];
+    Image images_[5];
 
-    int paragraphCount;
-    int tableCount;
-    int imageCount;
+    int paragraph_Count;
+    int table_Count;
+    int image_Count;
+
+    static const int MAX_PARAGRAPHS = 10;
+    static const int MAX_TABLES = 5;
+    static const int MAX_IMAGES = 5;
 
 public:
     Document();
@@ -30,6 +35,12 @@ public:
     int getParagraphCount() const;
     int getTableCount() const;
     int getImageCount() const;
+
+    bool removeLastParagraph();
+    bool removeLastTable();
+    bool removeLastImage();
+
+    int getTotalElements() const;
 };
 
 #endif

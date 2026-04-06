@@ -12,6 +12,9 @@ class Document {
     + addParagraph(Paragraph)
     + addTable(Table)
     + addImage(Image)
+    + addParagraph(Paragraph)
+    + removeLastParagraph()
+    + getTotalElements()
 }
 
 class Header {
@@ -24,6 +27,7 @@ class Paragraph {
     - string text
     + getText()
     + setText()
+    + getLength()
 }
 
 class Table {
@@ -31,11 +35,16 @@ class Table {
     - int cols
     + getRows()
     + getCols()
+    + getCellCount()
 }
 
 class Image {
     - string path
     + getPath()
+    path_ : string
+    width_ : int
+    height_ : int
+    + scale(int)
 }
 
 ' Composition relationships

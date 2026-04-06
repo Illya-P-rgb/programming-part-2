@@ -3,8 +3,8 @@
 
 class Table {
 private:
-    int rows;
-    int cols;
+    int rows_;
+    int cols_;
 
 public:
     Table();
@@ -12,6 +12,7 @@ public:
 
     int getRows() const;
     int getCols() const;
+    int getCellCount() const;
 };
 
 #endif
