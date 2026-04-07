@@ -31,6 +31,35 @@ lab04/
 ├──Report.md
 ```
 
+
+## The specification of the selected variant
+
+```
+Variant 15. DeliveryOrder
+Class description. The class describes one delivery order.
+Fields:
+• int orderNumber
+• double distanceKm
+• double price
+• bool delivered
+• int priority
+Main interface to implement:
+• DeliveryOrder(int orderNumber, double distanceKm, double
+price, bool delivered, int priority)
+• void markDelivered()
+• double deliveryCostPerKm() const
+• bool isUrgent() const
+• void increasePriority()
+• double discountedPrice(double percent) const
+Required getters and setters:
+• int getOrderNumber() const, void setOrderNumber(int value)
+• double getDistanceKm() const, void setDistanceKm(double
+value)
+• double getPrice() const, void setPrice(double value)
+• bool getDelivered() const, void setDelivered(bool value)
+• int getPriority() const, void setPriority(int value)
+```
+
 ## CMakeBuild.txt
 
 ```
@@ -150,8 +179,8 @@ TEST(DeliveryOrderTest, MarksOrderAsDelivered) {
 
 ## SCreenshots
 
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](/home/ilya/programming-part-2/lab04/assets/image-1.png)
+![alt text](/home/ilya/programming-part-2/lab04/assets/image.png)
 
 
 ## Short Analysis
