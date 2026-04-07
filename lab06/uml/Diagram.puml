@@ -1,0 +1,56 @@
+@startuml document_layout
+
+class Document {
+    - Header header
+    - Paragraph paragraphs[10]
+    - Table tables[5]
+    - Image images[5]
+    - int paragraphCount
+    - int tableCount
+    - int imageCount
+    + setHeader(Header)
+    + addParagraph(Paragraph)
+    + addTable(Table)
+    + addImage(Image)
+    + addParagraph(Paragraph)
+    + removeLastParagraph()
+    + getTotalElements()
+}
+
+class Header {
+    - string title
+    + getTitle()
+    + setTitle()
+}
+
+class Paragraph {
+    - string text
+    + getText()
+    + setText()
+    + getLength()
+}
+
+class Table {
+    - int rows
+    - int cols
+    + getRows()
+    + getCols()
+    + getCellCount()
+}
+
+class Image {
+    - string path
+    + getPath()
+    path_ : string
+    width_ : int
+    height_ : int
+    + scale(int)
+}
+
+' Composition relationships
+Document *-- Header
+Document *-- Paragraph
+Document *-- Table
+Document *-- Image
+
+@enduml
