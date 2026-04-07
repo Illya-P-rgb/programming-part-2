@@ -1,0 +1,3 @@
+add_executable(variant15_app main.cpp)
+
+target_link_libraries(variant15_app PRIVATE variant15_lib fmt::fmt)

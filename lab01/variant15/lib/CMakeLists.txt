@@ -1,0 +1,4 @@
+add_library(variant15_lib shopping_list.cpp)
+
+target_include_directories(variant15_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_features(variant15_lib PUBLIC cxx_std_20)
