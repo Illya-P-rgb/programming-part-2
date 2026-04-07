@@ -1,0 +1,52 @@
+@startuml lab07
+
+class CityObject {
+    # id_ : int
+    # name_ : string
+    # location_ : string
+    + CityObject(int, string, string)
+    + getId() : int
+    + getName() : string
+    + getLocation() : string
+    + describe() : void
+}
+
+class Building {
+    # floors_ : int
+    # area_ : double
+    # yearBuilt_ : int
+    + Building(int, string, string, int, double, int)
+    + getFloors() : int
+    + getArea() : double
+    + getYearBuilt() : int
+    + describe() : void
+}
+
+class ResidentialBuilding {
+    # residents_ : int
+    # hasElevator_ : bool
+    # parkingSpots_ : int
+    + ResidentialBuilding(int, string, string, int, double, int, int, bool, int)
+    + getResidents() : int
+    + hasElevator() : bool
+    + getParkingSpots() : int
+    + describe() : void
+}
+
+class IndustrialBuilding {
+    # workers_ : int
+    # industryType_ : string
+    # powerConsumption_ : double
+    + IndustrialBuilding(int, string, string, int, double, int, int, string, double)
+    + getWorkers() : int
+    + getIndustryType() : string
+    + getPowerConsumption() : double
+    + describe() : void
+}
+
+' Inheritance relationships
+CityObject <|-- Building
+Building <|-- ResidentialBuilding
+Building <|-- IndustrialBuilding
+
+@enduml
