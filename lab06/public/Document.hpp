@@ -20,7 +20,7 @@ private:
     int image_Count;
 
     static const int MAX_PARAGRAPHS = 10;
-    static const int MAX_TABLES = 5;
+    static const int MAX_TABLES = 3;
     static const int MAX_IMAGES = 5;
 
 public:

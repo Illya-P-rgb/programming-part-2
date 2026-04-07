@@ -11,6 +11,7 @@ void Document::setHeader(const Header &header) {
     this->header_ = header;
 }
 
+// внизу змінений метод
 void Document::addParagraph(const Paragraph &p) {
     if (paragraph_Count < MAX_PARAGRAPHS) {
         paragraphs_[paragraph_Count] = p;
