@@ -17,7 +17,6 @@ int main() {
                             5, 1200.0, 2010,
                             100, true, 20);
 
-    std::cout << "-" << std::endl;
 
     IndustrialBuilding ind(4, "Factory Zone", "Industrial Area",
                            3, 5000.0, 1998,
