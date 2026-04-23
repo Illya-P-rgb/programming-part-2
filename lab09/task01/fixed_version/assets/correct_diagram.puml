@@ -1,0 +1,33 @@
+@startuml
+
+class Device {
+    - name : string
+    + Device(name : string)
+    + describe() : void
+}
+
+class InputDevice {
+    + InputDevice(name : string)
+    + describe() : void
+}
+
+class OutputDevice {
+    + OutputDevice(name : string)
+    + describe() : void
+}
+
+class TouchDisplay {
+    + TouchDisplay(name : string)
+    + describe() : void
+}
+
+Device <|-- InputDevice : virtual
+Device <|-- OutputDevice : virtual
+InputDevice <|-- TouchDisplay
+OutputDevice <|-- TouchDisplay
+
+note right of TouchDisplay
+→ no ambiguity
+end note
+
+@enduml
