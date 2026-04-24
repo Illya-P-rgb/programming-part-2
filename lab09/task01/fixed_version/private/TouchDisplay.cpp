@@ -2,7 +2,7 @@
 #include <iostream>
 
 TouchDisplay::TouchDisplay(const std::string& name)
-    : Device(name),        // 🔥 REQUIRED for virtual base
+    : Device(name),
       InputDevice(name),
       OutputDevice(name) {}
 
