@@ -22,16 +22,20 @@ void Document::addParagraph(const Paragraph &p) {
 }
 
 void Document::addTable(const Table &t) {
-    if (table_Count < 5) {
+    if (table_Count < MAX_TABLES) {
         tables_[table_Count] = t;
         table_Count++;
+    } else {
+        std::cout << "Cannot add more tables\n";
     }
 }
 
 void Document::addImage(const Image &i) {
-    if (image_Count < 5) {
+    if (image_Count < MAX_IMAGES) {
         images_[image_Count] = i;
         image_Count++;
+    } else {
+        std::cout << "Cannot add more images\n";
     }
 }
 
