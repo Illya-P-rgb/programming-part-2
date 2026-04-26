@@ -18,7 +18,9 @@ public:
     std::string getName() const;
     std::string getLocation() const;
 
-    virtual void describe() const;
+    virtual void describe() const = 0;
+
+    void relocate(const std::string& newLocation);
 };
 
 #endif

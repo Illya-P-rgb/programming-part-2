@@ -18,6 +18,9 @@ public:
     int getYearBuilt() const;
 
     void describe() const override;
+
+    double calculateDensity() const;
+    bool isHistoric() const;
 };
 
 #endif

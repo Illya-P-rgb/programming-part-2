@@ -1,0 +1,52 @@
+@startuml
+
+abstract class CityObject {
+    - id_ : int
+    - name_ : string
+    - location_ : string
+    + CityObject(id, name, location)
+    + getId() : int
+    + getName() : string
+    + getLocation() : string
+    + relocate(newLocation : string)
+    + describe() : void
+}
+
+class Building {
+    - floors_ : int
+    - area_ : double
+    - yearBuilt_ : int
+    + Building(...)
+    + getFloors() : int
+    + getArea() : double
+    + getYearBuilt() : int
+    + calculateDensity() : double
+    + isHistoric() : bool
+    + describe() : void
+}
+
+class ResidentialBuilding {
+    - residents_ : int
+    - hasElevator_ : bool
+    - parkingSpots_ : int
+    + ResidentialBuilding(...)
+    + averageResidentsPerFloor() : double
+    + hasParkingAvailability() : bool
+    + describe() : void
+}
+
+class IndustrialBuilding {
+    - workers_ : int
+    - industryType_ : string
+    - powerConsumption_ : double
+    + IndustrialBuilding(...)
+    + powerPerWorker() : double
+    + isEnergyIntensive() : bool
+    + describe() : void
+}
+
+CityObject <|-- Building
+Building <|-- ResidentialBuilding
+Building <|-- IndustrialBuilding
+
+@enduml

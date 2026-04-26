@@ -86,7 +86,9 @@ public:
     std::string getName() const;
     std::string getLocation() const;
 
-    virtual void describe() const;
+    virtual void describe() const = 0;
+
+    void relocate(const std::string& newLocation);
 };
 ```
 
@@ -106,6 +108,9 @@ public:
     int getYearBuilt() const;
 
     void describe() const override;
+
+    double calculateDensity() const;
+    bool isHistoric() const;
 };
 ```
 
@@ -126,6 +131,9 @@ public:
     double getPowerConsumption() const;
 
     void describe() const override;
+
+    double powerPerWorker() const;
+    bool isEnergyIntensive() const;
 };
 ```
 
@@ -146,20 +154,16 @@ public:
     int getParkingSpots() const;
 
     void describe() const override;
+
+    double averageResidentsPerFloor() const;
+    bool hasParkingAvailability() const;
 };
 ```
 
 ## An example of object creation in main
 
 ```
-CityObject obj(1, "Generic Object", "Center");
 Building b(2, "Office Building", "Downtown", 10, 2500.5, 2005);
-ResidentialBuilding res(3, "Apartment Block", "Suburbs",
-                            5, 1200.0, 2010,
-                            100, true, 20);
-IndustrialBuilding ind(4, "Factory Zone", "Industrial Area",
-                           3, 5000.0, 1998,
-                           200, "Manufacturing", 1500.0);
 ```
 
 

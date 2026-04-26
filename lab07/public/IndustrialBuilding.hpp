@@ -19,6 +19,9 @@ public:
     double getPowerConsumption() const;
 
     void describe() const override;
+
+    double powerPerWorker() const;
+    bool isEnergyIntensive() const;
 };
 
 #endif

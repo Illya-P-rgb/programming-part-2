@@ -19,6 +19,9 @@ public:
     int getParkingSpots() const;
 
     void describe() const override;
+
+    double averageResidentsPerFloor() const;
+    bool hasParkingAvailability() const;
 };
 
 #endif
