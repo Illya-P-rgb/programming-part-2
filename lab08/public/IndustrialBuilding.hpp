@@ -19,6 +19,7 @@ public:
     double getPowerConsumption() const;
 
     void describe() const override;
+    double calculateOperatingCost() const override;
 };
 
 #endif

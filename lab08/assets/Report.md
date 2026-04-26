@@ -133,6 +133,7 @@ public:
     int getYearBuilt() const;
 
     virtual void describe() const;
+    virtual double calculateOperatingCost() const = 0;
 };
 
 #endif
@@ -160,6 +161,7 @@ public:
     double getPowerConsumption() const;
 
     void describe() const override;
+    double calculateOperatingCost() const override;
 };
 
 #endif
@@ -187,6 +189,7 @@ public:
     int getParkingSpots() const;
 
     void describe() const override;
+    double calculateOperatingCost() const override;
 };
 
 #endif

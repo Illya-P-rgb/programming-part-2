@@ -18,6 +18,7 @@ public:
     int getYearBuilt() const;
 
     virtual void describe() const;
+    virtual double calculateOperatingCost() const = 0;
 };
 
 #endif

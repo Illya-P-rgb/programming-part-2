@@ -23,5 +23,9 @@ void IndustrialBuilding::describe() const {
     std::cout << "Industrial Building: " << name_
               << ", workers: " << workers_
               << ", industry: " << industryType_
-              << ", power: " << powerConsumption_ << std::endl;
+              << ", power: " << powerConsumption_ << std::endl;              
+}
+
+double IndustrialBuilding::calculateOperatingCost() const {
+    return powerConsumption_ * 0.75 + workers_ * 20;
 }

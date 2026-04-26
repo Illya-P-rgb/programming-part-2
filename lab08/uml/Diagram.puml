@@ -5,7 +5,7 @@ abstract class CityObject {
     # name_ : string
     # location_ : string
     + CityObject(int, string, string)
-    + describe() : void = 0
+    + describe() : void
 }
 
 abstract class Building {
@@ -14,6 +14,7 @@ abstract class Building {
     # yearBuilt_ : int
     + Building(int, string, string, int, double, int)
     + describe() : void
+    + calculateOperatingCost() : double
 }
 
 class ResidentialBuilding {
@@ -22,7 +23,7 @@ class ResidentialBuilding {
     # parkingSpots_ : int
     + ResidentialBuilding(...)
     + describe() : void
-    + getDensity() : int
+    + calculateOperatingCost() : double
 }
 
 class IndustrialBuilding {
@@ -31,7 +32,7 @@ class IndustrialBuilding {
     # powerConsumption_ : double
     + IndustrialBuilding(...)
     + describe() : void
-    + getPowerPerWorker() : double
+    + calculateOperatingCost() : double
 }
 
 CityObject <|-- Building

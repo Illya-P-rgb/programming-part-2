@@ -7,9 +7,7 @@
 
 int main() {
     CityObject* objects[2];
-
-    Building b(2, "Office Building", "Downtown", 10, 2500.5, 2005);
-    b.describe();
+    Building* buildings[2];
 
     std::cout << "-" << std::endl;
 
@@ -27,7 +25,15 @@ int main() {
     for (int i = 0; i < 2; i++) {
     objects[i]->describe();
     }
-    std::cout << "------------------" << std::endl;
+
+    buildings[0] = &res;
+    buildings[1] = &ind;
+
+    for (auto b : buildings) {
+     std::cout << b->calculateOperatingCost() << std::endl;
+    }
+
+    std::cout << "-" << std::endl;
 
     std::cout << "Size of CityObject: " << sizeof(CityObject) << std::endl;
     std::cout << "Size of Building: " << sizeof(Building) << std::endl;

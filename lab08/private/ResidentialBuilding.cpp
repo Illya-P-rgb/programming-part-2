@@ -25,3 +25,7 @@ void ResidentialBuilding::describe() const {
               << ", elevator: " << (hasElevator_ ? "yes" : "no")
               << ", parking spots: " << parkingSpots_ << std::endl;
 }
+
+double ResidentialBuilding::calculateOperatingCost() const {
+    return residents_ * 50 + parkingSpots_ * 10;
+}
