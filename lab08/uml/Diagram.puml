@@ -1,0 +1,42 @@
+@startuml UrbanInfrastructure
+
+abstract class CityObject {
+    # id_ : int
+    # name_ : string
+    # location_ : string
+    + CityObject(int, string, string)
+    + describe() : void
+}
+
+abstract class Building {
+    # floors_ : int
+    # area_ : double
+    # yearBuilt_ : int
+    + Building(int, string, string, int, double, int)
+    + describe() : void
+    + calculateOperatingCost() : double
+}
+
+class ResidentialBuilding {
+    # residents_ : int
+    # hasElevator_ : bool
+    # parkingSpots_ : int
+    + ResidentialBuilding(...)
+    + describe() : void
+    + calculateOperatingCost() : double
+}
+
+class IndustrialBuilding {
+    # workers_ : int
+    # industryType_ : string
+    # powerConsumption_ : double
+    + IndustrialBuilding(...)
+    + describe() : void
+    + calculateOperatingCost() : double
+}
+
+CityObject <|-- Building
+Building <|-- ResidentialBuilding
+Building <|-- IndustrialBuilding
+
+@enduml
