@@ -1,0 +1,36 @@
+@startuml
+
+abstract class Appliance {
+    - name : string
+    - power : int
+    + operate() : void
+}
+
+class Heater {
+    - temperature : int
+    + operate() : void
+}
+
+class Cooler {
+    - coolingLevel : int
+    + operate() : void
+}
+
+class Humidifier {
+    - humidity : int
+    + operate() : void
+}
+
+class ClimateSystem {
+    + operate() : void
+}
+
+Appliance <|-- Heater : virtual
+Appliance <|-- Cooler : virtual
+Appliance <|-- Humidifier : virtual
+
+Heater <|-- ClimateSystem
+Cooler <|-- ClimateSystem
+Humidifier <|-- ClimateSystem
+
+@enduml
