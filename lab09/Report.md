@@ -267,6 +267,6 @@ lab09/
 
 ### Observations and Conclusion
 
-The designed class hierarchy demonstrates a correct use of multiple inheritance combined with virtual inheritance to avoid duplication of the common base class. The use of virtual inheritance ensures that only one instance of the base class exists in the most derived class, preserving consistency and preventing ambiguity.
+This lab seemed complicated at first, but eventually i managed to come out on top. In task 1, i had to make a broken version of a project, to demonstrate the diamond problem, and then make another directory with this exact task, but done correctly. The diamond problem is solved by offloading the task of creating the base class onto the most derived class' constructor, along with some other minor additions. The second task was a full project, and it was meant to demonstrate multiple inheritance hirarchy, along with virtual inheritance.
 
 ---
