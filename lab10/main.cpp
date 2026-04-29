@@ -4,8 +4,6 @@
 int main() {
     using namespace GeometryUtils;
 
-    std::cout << "=== Geometry Helpers Demo ===\n\n";
-
     std::cout << "square(5) = " << square(5) << "\n";
     std::cout << "square(2.5) = " << square(2.5) << "\n\n";
 
