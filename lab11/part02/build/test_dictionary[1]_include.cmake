@@ -1,0 +1,5 @@
+if(EXISTS "/home/ilya/programming-part-2/lab11/part02/build/test_dictionary[1]_tests.cmake")
+  include("/home/ilya/programming-part-2/lab11/part02/build/test_dictionary[1]_tests.cmake")
+else()
+  add_test(test_dictionary_NOT_BUILT test_dictionary_NOT_BUILT)
+endif()

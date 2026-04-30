@@ -1,0 +1,4 @@
+FixedDictionaryTest.InsertAndFindStringKey 1 0.00296239
+FixedDictionaryTest.CStringSpecializationWorks 1 0.0040733
+FixedDictionaryTest.CapacityLimit 1 0.00263968
+---
