@@ -1,7 +1,0 @@
-add_test([=[FixedDictionaryTest.InsertAndFindStringKey]=]  /home/ilya/programming-part-2/lab11/part02/build/test_dictionary [==[--gtest_filter=FixedDictionaryTest.InsertAndFindStringKey]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[FixedDictionaryTest.InsertAndFindStringKey]=]  PROPERTIES WORKING_DIRECTORY /home/ilya/programming-part-2/lab11/part02/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[FixedDictionaryTest.CStringSpecializationWorks]=]  /home/ilya/programming-part-2/lab11/part02/build/test_dictionary [==[--gtest_filter=FixedDictionaryTest.CStringSpecializationWorks]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[FixedDictionaryTest.CStringSpecializationWorks]=]  PROPERTIES WORKING_DIRECTORY /home/ilya/programming-part-2/lab11/part02/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[FixedDictionaryTest.CapacityLimit]=]  /home/ilya/programming-part-2/lab11/part02/build/test_dictionary [==[--gtest_filter=FixedDictionaryTest.CapacityLimit]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[FixedDictionaryTest.CapacityLimit]=]  PROPERTIES WORKING_DIRECTORY /home/ilya/programming-part-2/lab11/part02/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  test_dictionary_TESTS FixedDictionaryTest.InsertAndFindStringKey FixedDictionaryTest.CStringSpecializationWorks FixedDictionaryTest.CapacityLimit)
