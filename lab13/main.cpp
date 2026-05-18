@@ -8,18 +8,13 @@
 #include "public/ReportBuilder.h"
 
 int main() {
-    // ============================
-    // UTF-8 and std::string demo
-    // ============================
+
     std::string english = "cat";
     std::string ukrainian = "кіт";
 
     std::cout << english << ": " << english.size() << " bytes\n";
     std::cout << ukrainian << ": " << ukrainian.size() << " bytes\n";
 
-    // ============================
-    // C-string and buffer demo
-    // ============================
     std::string sensorName = "T1";
     const char* rawSensor = sensorName.c_str();
 
@@ -40,9 +35,6 @@ int main() {
         std::cout << "Buffer content: " << buffer << "\n";
     }
 
-    // ============================
-    // File processing
-    // ============================
     const int MAX_RECORDS = 1000;
     const int MAX_ERRORS = 1000;
 
