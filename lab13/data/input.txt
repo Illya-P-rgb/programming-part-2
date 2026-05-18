@@ -1,0 +1,11 @@
+sensor=T1; value=23.7; unit=C; status=normal
+sensor=A2; value=50.1; unit=C; status=emergency
+sensor=B3; value=10; unit=F; status=warning
+sensor=12; value=23.7; unit=C; status=normal
+sensor=T1; value=abc; unit=C; status=normal
+sensor=T2; value=20.5; unit=X; status=normal
+sensor=T3; value=15.0; unit=C
+sensor=Z9; value=0; unit=C; status=emergency
+sensor= A1 ; value= 100 ; unit= C ; status= normal
+
+

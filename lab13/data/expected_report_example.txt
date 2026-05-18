@@ -1,0 +1,23 @@
+Sensor Measurements Report
+==========================
+
+Total valid records: 3
+Total invalid records: 4
+
+Status Statistics:
+Normal: 1
+Warning: 1
+Emergency: 1
+
+Average Value: 27.93
+Maximum Value: 50.10
+Sensor with Maximum Value: A2 (50.1 C)
+
+Emergency Records:
+Line 2: sensor=A2; value=50.1; unit=C; status=emergency
+
+Invalid Records:
+Line 4: Invalid sensor code | sensor=12; value=23.7; unit=C; status=normal
+Line 5: Invalid numeric value | sensor=T1; value=abc; unit=C; status=normal
+Line 6: Invalid measurement unit | sensor=T2; value=20.5; unit=X; status=normal
+Line 7: Missing status field | sensor=T3; value=15.0; unit=C
